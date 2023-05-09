@@ -30,7 +30,7 @@ func initDatabase(db *gorm.DB, e *echo.Echo) {
 
 func main() {
 
-	fmt.Println("APPLICATION STARTS")
+	fmt.Println("APPLICATION STARTS!")
 	e := echo.New()
 	db := new(gorm.DB)
 
