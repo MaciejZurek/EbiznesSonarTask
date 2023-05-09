@@ -1,6 +1,8 @@
 package main
 
 import (
+	"fmt"
+
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
 	"gorm.io/driver/sqlite"
@@ -27,6 +29,8 @@ func initDatabase(db *gorm.DB, e *echo.Echo) {
 }
 
 func main() {
+
+	fmt.Println("APPLICATION STARTS")
 	e := echo.New()
 	db := new(gorm.DB)
 
